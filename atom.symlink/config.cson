@@ -2,7 +2,6 @@
   editor:
     invisibles:
       {}
-    fontFamily: "Fira Code"
     fontSize: 15
     showIndentGuide: true
     showInvisibles: true

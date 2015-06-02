@@ -14,6 +14,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gs='git status -sb'
 alias gcb='git-copy-branch-name'
+alias gst='git status'
 
 gpr() {
   gp && open-pr "$*"

@@ -1,3 +1,3 @@
 #!/bin/sh
-export GOPATH="$PROJECTS/Go"
-[ ! -d "$GOPATH" ] &&  mkdir -p "$GOPATH"
+export GOPATH="/usr/local/opt/go"
+export PATH=$PATH:$GOPATH/libexec/bin

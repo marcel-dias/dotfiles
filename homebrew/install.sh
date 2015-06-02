@@ -21,36 +21,31 @@ brew install brew-cask
 
 # usefull stuff
 brew install grc coreutils the_silver_searcher htop-osx heroku-toolbelt \
-  imagemagick wget unrar ffmpeg gifsicle terminal-notifier
-brew cask install iterm2 the-unarchiver disk-inventory-x appcleaner diffmerge \
-  android-file-transfer evernote
+  imagemagick wget unrar ffmpeg terminal-notifier
+brew cask install the-unarchiver diffmerge
 
 # virtualization
-brew cask install virtualbox vagrant
+brew cask install virtualbox
 
 # chat, books, notes, documents, mail, etc
-brew cask install kindle calibre dropbox skype slack messenger-for-telegram
+brew cask install messenger-for-telegram
 
 # browser
 brew cask install google-chrome
-
-# vpn stuff
-brew cask install tunnelblick-beta
-
-# gaming
-brew cask install steam
 
 # Install fonts.
 brew tap caskroom/fonts
 brew cask install font-source-code-pro
 
 # databases et al
-brew install mariadb redis
-brew cask install sequel-pro postgres pg-commander
+brew cask install postgres
 
 # watch and download stuff
 brew install youtube-dl
-brew cask install tvshows subtitle-master beamer vlc transmission spotify
+brew cask install subtitle-master vlc spotify
+
+# pandoc - markdown converter
+brew cask install pandoc basictex
 
 # quick look plugins - https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \

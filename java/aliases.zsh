@@ -17,8 +17,9 @@ alias mvnp='mvn package'
 alias mvnc='mvn clean'
 alias mvncom='mvn compile'
 alias mvnt='mvn test'
-alias mvnag='mvn archetype:generate'
-alias mvnnew='mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart'
+
+alias compile='mvn clean install -DskipTests=true'
+alias mtree='mvn dependency:tree'
 
 killjboss() {
   pgrep -f jboss-modules | xargs kill -9

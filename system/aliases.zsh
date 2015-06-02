@@ -9,14 +9,24 @@ if gls &>/dev/null; then
   alias ll="gls -l --color"
   alias la="gls -A --color"
 else
-  alias ls="ls -F --color"
+  alias ls="ls -Fh --color"
   alias l="ls -lAh --color"
   alias ll="ls -l --color"
   alias la="ls -A --color"
 fi
+
 alias grep="grep --color=auto"
 alias duf="du -sh * | sort -hr"
 alias less="less -r"
+alias lsopenports='lsof -i -n -P'
+
+alias code='cd /code'
+alias be='cd /code/identity/backend'
+alias fe='cd /code/identity/frontend'
+alias fluig='cd /code/fluig'
+alias ind='cd /code/indicating'
+alias wildlfy='cd /Applications/wildfly'
+alias fiind='cd /code/fiind/fiind'
 
 if [ -z "$(command -v pbcopy)" ]; then
   if [ -n "$(command -v xclip)" ]; then
