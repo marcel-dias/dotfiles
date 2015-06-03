@@ -1,12 +1,8 @@
-# carlos' dotfiles  [![DevOps By Rultor.com][rb]][rb] [![Build Status][tb]][tp]
+# marceldias' dotfiles  
 > Runs on Linux and OSX. Configurations for ZSH, SublimeText 3, Java, Ruby, Terminals and others.
 
 ![screenshot][scrn]
 
-[rb]: http://www.rultor.com/b/caarlos0/dotfiles
-[rp]: http://www.rultor.com/p/caarlos0/dotfiles
-[tb]: https://travis-ci.org/caarlos0/dotfiles.svg?branch=master
-[tp]: https://travis-ci.org/caarlos0/dotfiles
 [scrn]: https://raw.githubusercontent.com/caarlos0/dotfiles/master/screenshot.png
 
 ## dotfiles
@@ -20,7 +16,7 @@ up into the main areas I used (Ruby, git, system libraries, and so on), so I
 structured the project accordingly.
 
 If you're interested in the philosophy behind why projects like these are
-awesome, you might want to [read my post on the subject][post].
+awesome, you might want to [read Caarlos0 post on the subject][post].
 
 [post]: http://carlosbecker.com/posts/dotfiles-are-meant-to-be-forked/
 
@@ -29,7 +25,7 @@ awesome, you might want to [read my post on the subject][post].
 Run this:
 
 ```sh
-bash -c "$(wget -O - https://raw.githubusercontent.com/caarlos0/dotfiles/master/script/install)"
+bash -c "$(wget -O - https://raw.githubusercontent.com/marceldiass/dotfiles/master/script/install)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
@@ -140,8 +136,8 @@ Feel free to contribute. Pull requests will be automatically
 checked/linted with [Shellcheck](https://github.com/koalaman/shellcheck).
 
 ## thanks
-
-I forked [Holmans](http://github.com/holman)' excellent
+I want to add my thanks to [caarlos0](http://github.com/caarlos0)
+He forked [Holmans](http://github.com/holman)' excellent
 [dotfiles](http://github.com/holman/dotfiles) and tweaked it to fit my
 taste. I have also copied one thing or another from other people, so,
 thanks everyone!
