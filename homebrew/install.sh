@@ -45,7 +45,8 @@ brew install youtube-dl
 brew cask install subtitle-master vlc spotify
 
 # pandoc - markdown converter
-brew cask install pandoc basictex
+brew install pandoc
+brew cask install basictex
 
 # quick look plugins - https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
