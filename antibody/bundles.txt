@@ -1,7 +1,6 @@
 caarlos0/jvm
 caarlos0/zsh-pg
 djui/alias-tips
-caarlos0/zsh-mkc
 caarlos0/zsh-git-sync
 zsh-users/zsh-completions
 caarlos0/zsh-add-upstream
