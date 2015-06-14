@@ -20,14 +20,6 @@ alias duf="du -sh * | sort -hr"
 alias less="less -r"
 alias lsopenports='lsof -i -n -P'
 
-alias code='cd /code'
-alias be='cd /code/identity/backend'
-alias fe='cd /code/identity/frontend'
-alias fluig='cd /code/fluig'
-alias ind='cd /code/indicating'
-alias wildlfy='cd /Applications/wildfly'
-alias fiind='cd /code/fiind/fiind'
-
 if [ -z "$(command -v pbcopy)" ]; then
   if [ -n "$(command -v xclip)" ]; then
     alias pbcopy="xclip -selection clipboard"

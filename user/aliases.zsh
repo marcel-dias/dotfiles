@@ -1,0 +1,6 @@
+alias code='cd /code'                                                           
+alias be='cd /code/identity/backend'                                            
+alias fe='cd /code/identity/frontend'                                           
+alias fluig='cd /code/fluig'                                                    
+alias wildfly='cd /Applications/wildfly'                                        
+alias fiind='/code/fiind/fiind'
