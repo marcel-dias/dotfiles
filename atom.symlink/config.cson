@@ -1,7 +1,6 @@
 "*":
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     fontSize: 15
     showIndentGuide: true
     showInvisibles: true
@@ -13,5 +12,4 @@
     userId: "eb68b94c-a76b-64f4-46e7-bd087cf1c98f"
   welcome:
     showOnStartup: false
-  linter:
-    {}
+  linter: {}
