@@ -2,6 +2,9 @@
 [ "$(uname -s)" = "Darwin" ] && brew cask install atom
 apm install \
   editorconfig \
-  language-docker language-diff language-puppet \
-  linter linter-jshint linter-ruby \
-  atom-beautify color-picker || true
+  language-docker language-diff \
+  linter linter-jshint \
+  atom-beautify color-picker \
+  go-plus go-rename \
+  file-icons \
+  angularjs autocomplete-angular-material || true
