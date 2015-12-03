@@ -1,8 +1,6 @@
 #!/bin/sh
-if [ -d "$HOME/.rbenv" ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-fi
-# shellcheck disable=SC2039
-if rbenv &>/dev/null; then
-  eval "$(rbenv init -)"
-fi
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

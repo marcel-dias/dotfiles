@@ -1,9 +1,9 @@
 #!/bin/sh
 [ "$(uname -s)" != "Darwin" ] && exit 0
 
-if test ! "$(which rbenv)"; then
-  echo "  Installing rbenv for you."
-  brew install rbenv > /tmp/rbenv-install.log
+if test ! "$(which rvm)"; then
+  echo "  Installing rvm for you."
+  curl -L https://get.rvm.io | bash -s stable --ruby
 fi
 
 if test ! "$(which ruby-build)"; then
