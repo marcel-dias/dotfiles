@@ -1,6 +1,6 @@
-# caarlos0/dotfiles test container
+# marceldiass/dotfiles test container
 FROM ubuntu
-MAINTAINER Carlos Alexandro Becker <caarlos0@gmail.com>
+MAINTAINER Marcel Dias <marceldiass@gmail.com>
 
 RUN apt-get install -y software-properties-common wget zsh git curl python
 
