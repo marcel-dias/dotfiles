@@ -35,13 +35,8 @@ brew cask install google-chrome
 
 # Install fonts.
 brew tap caskroom/fonts
-brew cask install font-source-code-pro
-
-# databases et al
-brew cask install postgres
 
 # watch and download stuff
-brew install youtube-dl
 brew cask install subtitle-master vlc spotify
 
 # pandoc - markdown converter
