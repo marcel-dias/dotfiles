@@ -40,6 +40,12 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.universalaccess reduceTransparency -bool false
 
 #
+# Photos
+#
+# Disable Photos opening when plug a device
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+
+#
 # Finder
 #
 
