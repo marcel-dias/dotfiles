@@ -37,7 +37,7 @@ defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
-defaults write com.apple.universalaccess reduceTransparency -bool true
+defaults write com.apple.universalaccess reduceTransparency -bool false
 
 #
 # Finder
@@ -179,12 +179,6 @@ open "/tmp/terminal-ocean-dark.terminal"
 sleep 1
 defaults write com.apple.terminal "Default Window Settings" -string "terminal-ocean-dark"
 defaults write com.apple.terminal "Startup Window Settings" -string "terminal-ocean-dark"
-
-curl -L \
-  https://raw.githubusercontent.com/chriskempson/base16-iterm2/master/base16-ocean.dark.itermcolors \
-  > /tmp/base16-ocean.dark.itermcolors
-open /tmp/base16-ocean.dark.itermcolors
-sleep 1
 
 #
 # Kill related apps
