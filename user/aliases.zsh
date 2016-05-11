@@ -1,7 +1,5 @@
 alias code='cd /code'
 alias blog='cd /code/marceldiass.github.io'
-alias be='cd /code/identity/backend'
-alias fe='cd /code/identity/frontend'
-alias fluig='cd /code/fluig'
 alias wildfly='cd /Applications/wildfly'
 alias fiind='cd /code/fiind/fiind'
+alias ca='cd /code/contaazul/ContaAzul'
