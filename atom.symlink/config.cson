@@ -1,23 +1,25 @@
 "*":
-  editor:
-    invisibles: {}
-    fontSize: 15
-    showIndentGuide: true
-    showInvisibles: true
-    scrollPastEnd: true
-    fontFamily: "Hack"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "6f85ffc9-a576-4eda-9774-4e42169d223c"
   core:
-    hideGitIgnoredFiles: true
     autoHideMenuBar: true
-  "exception-reporting":
-    userId: "eb68b94c-a76b-64f4-46e7-bd087cf1c98f"
-  welcome:
-    showOnStartup: false
+    hideGitIgnoredFiles: true
   disabledPackages: [
     "metrics"
   ]
+  editor:
+    fontFamily: "Hack"
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "eb68b94c-a76b-64f4-46e7-bd087cf1c98f"
   linter: {}
   "tree-view":
     hideVcsIgnoredFiles: true
-  "atom-beautify":
-    _analyticsUserId: "4ccf2be3-8316-4f83-ab60-11b0d6e29e71"
+  wakatime:
+    apikey: "8d53b2a4-efeb-4aba-859a-42bbd743f739"
+  welcome:
+    showOnStartup: false
