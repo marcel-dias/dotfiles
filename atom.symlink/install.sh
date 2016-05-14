@@ -7,4 +7,5 @@ apm install \
   atom-beautify color-picker \
   go-plus go-rename \
   file-icons \
-  angularjs autocomplete-angular-material || true
+  angularjs autocomplete-angular-material \
+  wakatime || true
