@@ -5,3 +5,7 @@
 *.rbc
 *.class
 *.iml
+.idea
+.java-version
+deploy.sh
+compile
