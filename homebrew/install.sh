@@ -15,13 +15,12 @@ fi
 brew update
 
 # more formualae
-brew tap phinze/homebrew-cask || true
 brew tap caskroom/versions || true
 brew install brew-cask
 
 # usefull stuff
 brew install grc coreutils the_silver_searcher htop-osx heroku-toolbelt \
-  imagemagick wget unrar ffmpeg terminal-notifier
+  wget unrar ffmpeg terminal-notifier
 brew cask install the-unarchiver diffmerge
 
 # virtualization
