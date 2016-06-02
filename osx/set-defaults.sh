@@ -104,26 +104,6 @@ defaults write com.apple.dock autohide -bool false
 defaults write com.apple.dock launchanim -bool false
 
 #
-# Transmission
-#
-
-# Use `~/Downloads/Incomplete` to store incomplete downloads
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Incomplete"
-
-# Don't prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
-
-# Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-# Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
-
-# Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
-
-#
 # Mail
 #
 
@@ -192,7 +172,7 @@ defaults write com.apple.terminal "Startup Window Settings" -string "terminal-oc
 set +e
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" \
   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-  "Terminal" "Transmission"; do
+  "Terminal"; do
 killall "${app}" > /dev/null 2>&1
 done
 set -e
