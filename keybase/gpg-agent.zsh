@@ -6,8 +6,11 @@ else
   eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
 
-#vim ~/.gnupg/gpg.conf
-# uncomment the use-agent line
+# add the use-agent line to ~/.gnupg/gpg.conf
+GPG_USE_AGENT=`grep -e "#use-agent" ~/.gnupg/gpg.conf`
+if [ "x$GPG_USE_AGENT" != "x" ]; then
+  echo "use-agent" >> ~/.gnupg/gpg.conf
+fi
 
 if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
   touch ~/.gnupg/gpg-agent.conf
