@@ -1,9 +1,12 @@
 #!/bin/zsh
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH="$HOME/.dotfiles"
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=/code
+export PROJECTS="$HOME/Code"
+
+# your default editor
+export EDITOR='atom'
 
 # all of our zsh files
 typeset -U config_files
@@ -35,8 +38,3 @@ unset config_files
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 [[ -a ~/.localrc ]] && source ~/.localrc
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/marceldias/.gvm/bin/gvm-init.sh" ]] && source "/Users/marceldias/.gvm/bin/gvm-init.sh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
