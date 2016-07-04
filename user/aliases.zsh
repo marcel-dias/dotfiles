@@ -1,5 +1,5 @@
-alias code='cd /code'
-alias blog='cd /code/marceldiass.github.io'
+#!/bin/sh
+alias code='cd ~/Code'
+alias blog='cd ~/Code/marceldiass.github.io'
 alias wildfly='cd /Applications/wildfly'
-alias fiind='cd /code/fiind/fiind'
-alias ca='cd /code/contaazul/ContaAzul'
+alias ca='cd ~/Code/contaazul'
