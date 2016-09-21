@@ -1,9 +1,9 @@
-# marceldias' dotfiles  
-> Runs on Linux and OSX. Configurations for ZSH, SublimeText 3, Java, Ruby, Terminals and others.
+# Marcel Dias' dotfiles  
+> My own macOS preferences and configurations for ZSH, Java, Docker, Terminals and others.
 
 ![screenshot][scrn]
 
-[scrn]: https://raw.githubusercontent.com/caarlos0/dotfiles/master/screenshot.png
+[scrn]: https://raw.githubusercontent.com/marceldiass/dotfiles/master/screenshot.png
 
 ## dotfiles
 
@@ -76,34 +76,20 @@ ran at bootstrap phase.
 - [more completions][zsh-completions];
 - fish-like [substring history search][zsh-history-substring-search];
 - [alias-tips][alias-tips] to remember you that you have an alias for that;
-- [zsh-pg][zsh-pg] a set of utilities to deal with PostgreSQL;
-- [zsh-git-sync][zsh-git-sync] to keep your repositories synced;
-- [zsh-open-pr][zsh-open-pr] to open pull requests from the command line;
 - [jvm][jvm] to manage java versions (a la rvm, but simpler);
-- [mkc][zsh-mkc] to `mkdir` and `cd` in one line.
-browser.
 
 All those are managed by [Antibody][antibody], a faster version of Antigen
 written in Go.
 
-[antibody]: https://github.com/caarlos0/antibody
-[jvm]: https://github.com/caarlos0/jvm
-[zsh-pg]: https://github.com/caarlos0/zsh-pg
-[alias-tips]: https://github.com/djui/alias-tips
-[zsh-mkc]: https://github.com/caarlos0/zsh-mkc
-[zsh-git-sync]: https://github.com/caarlos0/zsh-git-sync
-[zsh-completions]: https://github.com/zsh-users/zsh-completions
-[zsh-open-github-pr]: https://github.com/caarlos0/zsh-open-github-pr
+[pure]: https://github.com/sindresorhus/pure
 [zsh-syntax-highlighting]: https://github.com/zsh-users/zsh-syntax-highlighting
+[zsh-completions]: https://github.com/zsh-users/zsh-completions
 [zsh-history-substring-search]: https://github.com/zsh-users/zsh-history-substring-search
+[alias-tips]: https://github.com/djui/alias-tips
+[jvm]: https://github.com/caarlos0/jvm
+[antibody]: https://github.com/caarlos0/antibody
 
-
-## compatibility
-
-I try to keep it working in both Linux (no specific distro) and OS X,
-mostly because I use OS X at home and Linux at work.
-
-## test it within Docker
+## Test it within Docker
 
 Yes you can! Pull the repo and run:
 
@@ -112,32 +98,10 @@ $ docker build -t dotfiles .
 $ docker run -it dotfiles
 ```
 
-It will start a fresh container with my dotfiles inside and dumb git
-credentials.
+It will start a fresh container with my dotfiles inside and dumb git credentials.
 
-## bugs
-
-I want this to work for everyone; that means when you clone it down it should
-work for you even though you may not have `rbenv` installed, for example. That
-said, I do use this as *my* dotfiles, so there's a good chance I may break
-something if I forget to make a check for a dependency.
-
-If you're brand-new to the project and run into any blockers, please
-[open an issue](https://github.com/caarlos0/dotfiles/issues) on this repository
-and I'd love to get it fixed for you!
-
-## known issues
-
-- All SC2039 ignores should be fixed (#65);
-
-## contributing
-
-Feel free to contribute. Pull requests will be automatically
-checked/linted with [Shellcheck](https://github.com/koalaman/shellcheck).
 
 ## thanks
 I want to add my thanks to [caarlos0](http://github.com/caarlos0)
 He forked [Holmans](http://github.com/holman)' excellent
-[dotfiles](http://github.com/holman/dotfiles) and tweaked it to fit my
-taste. I have also copied one thing or another from other people, so,
-thanks everyone!
+[dotfiles](http://github.com/holman/dotfiles) and tweaked it. Also I have copied a bunch of things from other people, so, thanks everyone!
