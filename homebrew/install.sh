@@ -26,21 +26,12 @@ brew cask install the-unarchiver diffmerge
 # virtualization
 brew cask install virtualbox
 
-# chat, books, notes, documents, mail, etc
-brew cask install messenger-for-telegram
-
 # browser
 brew cask install google-chrome
-
-# Install fonts.
-brew tap caskroom/fonts
 
 # watch and download stuff
 brew cask install subtitle-master vlc spotify
 
-# pandoc - markdown converter
-brew install pandoc
-brew cask install basictex
 
 # quick look plugins - https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json \
