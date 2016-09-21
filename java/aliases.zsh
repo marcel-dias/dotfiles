@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/ba./sartsh
 
 mvn() {
   # shellcheck disable=SC2068
@@ -8,14 +8,14 @@ mvn() {
   which notify-send > /dev/null && notify-send "$message"
 }
 
-alias mvnci='mvn clean install'
+alias mvnci='mvn clean install -Pformat,production'
 alias mvnd='mvn deploy'
 alias mvnp='mvn package'
 alias mvnc='mvn clean'
 alias mvncom='mvn compile'
 alias mvnt='mvn test'
-alias mvnformat='mvn validate -Pformat -fcontaazul-config'
+alias mvnformat='mvn validate -Pformat -fcontaazul-config -o'
 alias mvnit='mvn install -B -e -Pproduction,IT -Dit.keepDB -T2C'
 
-alias compile='mvn clean install -DskipTests=true'
+alias compile='mvn clean install -DskipTests=true -Pproduction'
 alias mtree='mvn dependency:tree'
