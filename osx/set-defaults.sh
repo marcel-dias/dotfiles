@@ -25,6 +25,9 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
+# Show the /Volumes folder.
+sudo chflags nohidden /Volumes
+
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 0
 
@@ -36,8 +39,19 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
-# Disable transparency in the menu bar and elsewhere on Yosemite
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Enable transparency in the menu bar and elsewhere
 defaults write com.apple.universalaccess reduceTransparency -bool false
+
+# Always show scrollbars
+defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
+# Possible values: `WhenScrolling`, `Automatic` and `Always`
+
+# Turn off keyboard illumination when computer is not used for 5 minutes"
+defaults write com.apple.BezelServices kDimTime -int 300
 
 #
 # Photos
@@ -48,6 +62,9 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 #
 # Finder
 #
+
+# Always open everything in Finder's list view"
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -110,10 +127,11 @@ defaults write com.apple.dock launchanim -bool false
 # Add the keyboard shortcut CMD + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
-
 # Disable smart quotes as it's annoying for messages that contain code
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
+# Disable inline attachments (just show the icons)"
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
 #
 # Others
@@ -145,9 +163,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Speeding up wake from sleep to 24 hours from an hour
-# http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
-# sudo pmset -a standbydelay 86400
+# Disable local backups
+# https://classicyuppie.com/what-crap-is-this-os-xs-mobilebackups/
+sudo tmutil disablelocal
 
 # disable iTunes fuckin helper
 sudo mv /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app{,-disabled} || true
