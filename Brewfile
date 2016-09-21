@@ -35,7 +35,7 @@ brew 'gnu-indent'
 brew 'gnu-getopt'
 
 # antibody
-tap 'getantibody/antibody'
+tap 'getantibody/homebrew-antibody'
 brew 'antibody'
 
 # casks
