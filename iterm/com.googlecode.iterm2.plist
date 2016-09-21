@@ -1019,6 +1019,8 @@
 	<string>2926 606 384 129 1440 -43 2560 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 364 620 392 0 0 1440 877 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>1721 208 918 512 1440 -96 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 1438 873 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_21048CBB-8F4B-4492-A49A-8DCDADDF9248</key>
@@ -1739,7 +1741,16 @@
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
-			<array/>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>ScriptTrigger</string>
+					<key>parameter</key>
+					<string>wakatime --entity Terminal --entity-type app --plugin "iterm2-wakatime/0.0.1" --project "&lt;&lt;LAST_PROJECT&gt;&gt;"</string>
+					<key>regex</key>
+					<string>.*</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -1773,7 +1784,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>8A3B04CA-5543-4882-8ED5-22C38E9C3F64</string>
 	<key>NoSyncLastTipTime</key>
-	<real>491143655.166982</real>
+	<real>492530810.46806002</real>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncSuppressBroadcastInputWarning</key>
@@ -1818,6 +1829,15 @@
 		<string>0026</string>
 		<string>0027</string>
 		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1887,13 +1907,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-25T02:42:16Z</date>
+	<date>2016-08-10T18:44:28Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -1939,6 +1959,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.3</string>
+	<string>3.0.5</string>
 </dict>
 </plist>
