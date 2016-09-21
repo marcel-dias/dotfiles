@@ -1,5 +1,2 @@
 #!/bin/sh
-reload_docker() {
-  eval "$(docker-machine env default)"
-}
-reload_docker >/dev/null 2>&1
+export DOCKER_HOST=unix:///var/run/docker.sock
