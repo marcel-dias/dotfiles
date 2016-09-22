@@ -53,13 +53,6 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Turn off keyboard illumination when computer is not used for 5 minutes"
 defaults write com.apple.BezelServices kDimTime -int 300
 
-# Setup computer name
-sudo scutil --set ComputerName "$USERNAME-mbp"
-sudo scutil --set HostName "$USERNAME-mbp"
-sudo scutil --set LocalHostName "$USERNAME-mbp"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USERNAME-mbp"
-
-
 #
 # Photos
 #
@@ -188,11 +181,6 @@ mv ~/Applications/Spotify.app/Contents/MacOS/SpotifyWebHelper{,-disabled} || tru
 #
 # Terminals
 #
-curl -L \
-  "https://raw.githubusercontent.com/mdo/ocean-terminal/master/terminal-ocean-dark.terminal" \
-  > "/tmp/terminal-ocean-dark.terminal"
-open "/tmp/terminal-ocean-dark.terminal"
-sleep 1
 defaults write com.apple.terminal "Default Window Settings" -string "terminal-ocean-dark"
 defaults write com.apple.terminal "Startup Window Settings" -string "terminal-ocean-dark"
 
