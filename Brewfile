@@ -55,6 +55,7 @@ cask 'istat-menus'
 cask 'iterm2'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'java7'
+cask 'skype'
 cask 'slack'
 cask 'slate'
 cask 'spotify'
@@ -76,5 +77,3 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'suspicious-package'
 cask 'webpquicklook'
-
-cleanup
