@@ -1,5 +1,7 @@
 #!/bin/sh
-[ "$(uname -s)" = "Darwin" ] && brew cask install atom
+if [ "$(uname -s)" != "Darwin" ]; then
+  exit 0
+fi
 apm install \
   editorconfig \
   language-docker language-diff \
