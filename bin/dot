@@ -9,10 +9,17 @@ main() {
   cd ~/.dotfiles
   # shellcheck disable=SC2155
   export ZSH="$(pwd)"
-  echo "Updating dotfiles..."
+  echo "› Updating dotfiles..."
   git pull origin master
 
-  echo "Setting macOS defaults..."
+  echo "› Updating Homebrew..."
+  brew update
+  
+  # Run Homebrew through the Brewfile
+  echo "› brew bundle"
+  brew bundle
+
+  echo "› Setting macOS defaults..."
   ./macOS/set-defaults.sh
 
   # find the installers and run them iteratively
