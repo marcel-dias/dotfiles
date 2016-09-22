@@ -15,7 +15,6 @@ brew 'hugo'
 brew 'keybase'
 brew 'maven'
 brew 'node'
-brew 'pinentry-mac'
 brew 'shellcheck'
 brew 'terminal-notifier'
 brew 'the_silver_searcher'
@@ -77,3 +76,5 @@ cask 'quicklook-csv'
 cask 'quicklook-json'
 cask 'suspicious-package'
 cask 'webpquicklook'
+
+cleanup
