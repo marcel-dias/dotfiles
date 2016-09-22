@@ -1,3 +1,5 @@
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
 # OS X Preferences
 
 # Enable character repeat on keydown

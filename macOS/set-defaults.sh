@@ -13,12 +13,6 @@ if [ "$(uname -s)" != "Darwin" ]; then
   exit 0
 fi
 
-# Setup computer name
-sudo scutil --set ComputerName "$USERNAME-mbp"
-sudo scutil --set HostName "$USERNAME-mbp"
-sudo scutil --set LocalHostName "$USERNAME-mbp"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USERNAME-mbp"
-
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -58,6 +52,13 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # Turn off keyboard illumination when computer is not used for 5 minutes"
 defaults write com.apple.BezelServices kDimTime -int 300
+
+# Setup computer name
+sudo scutil --set ComputerName "$USERNAME-mbp"
+sudo scutil --set HostName "$USERNAME-mbp"
+sudo scutil --set LocalHostName "$USERNAME-mbp"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$USERNAME-mbp"
+
 
 #
 # Photos
