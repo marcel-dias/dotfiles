@@ -150,9 +150,25 @@ install_apps() {
   fi
 }
 
+find_zsh() {
+  if which zsh >/dev/null 2>&1 && grep "$(which zsh)" /etc/shells >/dev/null; then
+    which zsh
+  else
+    echo "/bin/zsh"
+  fi
+}
+
+setup_zsh() {
+  zsh="$(find_zsh)"
+  which chsh > /dev/null 2>&1 &&
+  chsh -s "$zsh" &&
+  success "set $("$zsh" --version) at $zsh as default shell"
+}
+
 setup_gitconfig
 link_dotfiles
 install_apps
+setup_zsh
 
 echo ""
 echo "  All installed!"
