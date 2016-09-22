@@ -129,7 +129,7 @@ link_file () {
   fi
 }
 
-install_dotfiles () {
+link_dotfiles () {
   info "installing dotfiles"
 
   local overwrite_all=false backup_all=false skip_all=false
@@ -142,7 +142,7 @@ install_dotfiles () {
 }
 
 setup_gitconfig
-install_dotfiles
+link_dotfiles
 
 info "installing dependencies"
 if ./bin/dot > /tmp/dotfiles-dot 2>&1
