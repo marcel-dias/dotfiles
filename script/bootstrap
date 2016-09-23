@@ -165,10 +165,16 @@ setup_zsh() {
   success "set $("$zsh" --version) at $zsh as default shell"
 }
 
+set_macos_defaults() {
+  info "Setting macOS defaults..."
+  "$DOTFILES_ROOT/macOS/set-defaults.sh"
+}
+
 setup_gitconfig
 link_dotfiles
 setup_zsh
 install_apps
+set_macos_defaults
 
 echo ""
 echo "  All installed!"

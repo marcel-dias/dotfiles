@@ -24,9 +24,6 @@ main() {
     echo "› ${installer}..."
     sh -c "$installer" >> /tmp/dotfiles-dot
   done
-
-  echo "› Setting macOS defaults..."
-  sh -c ./macOS/set-defaults.sh
 }
 
 main
