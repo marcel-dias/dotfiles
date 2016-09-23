@@ -142,11 +142,11 @@ link_dotfiles () {
 }
 
 install_apps() {
-  info " Installing Applications and Set macOS defaults"
-  if ./bin/dot > /tmp/dotfiles-dot 2>&1; then
-    success "Dependencies installed"
+  info " Installing Applications"
+  if ./bin/dot; then
+    success "Applications installed"
   else
-    fail "Error installing dependencies"
+    fail "Error installing Applications"
   fi
 }
 
@@ -167,8 +167,8 @@ setup_zsh() {
 
 setup_gitconfig
 link_dotfiles
-install_apps
 setup_zsh
+install_apps
 
 echo ""
 echo "  All installed!"
