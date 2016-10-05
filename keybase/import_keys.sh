@@ -10,6 +10,9 @@ gpg --import ~/keybase.secret.key
 #gpg --edit-key {username}@keybase.io
 # then adduid
 
+# Update the trust level to don't show warning messages
+# gpg --edit-key {username}@keybase.io trust quit
+
 git config --global user.signingkey $(git config --get user.email)
 git config --global commit.gpgsign true
 
