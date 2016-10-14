@@ -20,7 +20,7 @@ done
 # load antibody plugins
 source ~/.antibody_bundles.txt
 
-# load everything but the path and completion files
+# load everything less the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
   source "$file"
 done
