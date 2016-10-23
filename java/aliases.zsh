@@ -1,4 +1,4 @@
-#!/bin/ba./sartsh
+#!/bin/sh
 
 mvn() {
   # shellcheck disable=SC2068
