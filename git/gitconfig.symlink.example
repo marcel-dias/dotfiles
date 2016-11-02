@@ -10,7 +10,6 @@
     promote           = !$ZSH/bin/git-promote
     wtf               = !$ZSH/bin/git-wtf
     unpushed-st       = !$ZSH/bin/git-unpushed-stat
-    nuke              = !$ZSH/bin/git-nuke
     count             = shortlog -sn
     lc                = !$ZSH/bin/git-add-rm-line-count
     g                 = grep --break --heading --line-number
@@ -32,6 +31,7 @@
     autocrlf          = input
     whitespace        = trailing-space,space-before-tab
     precomposeunicode = true
+    pager             = diff-so-fancy | less --tabs=4 -RFX
 [apply]
     whitespace = nowarn
 [help]
@@ -53,3 +53,12 @@
     lineNumber   = true
 [push]
     default = simple
+[color "diff-highlight"]
+    oldNormal = red
+    oldHighlight = red bold 52
+    newNormal = green
+    newHighlight = blue bold 22
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    log = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
