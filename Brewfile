@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 tap 'homebrew/versions'
 
+brew 'diff-so-fancy'
 brew 'docker'
 brew 'ffmpeg'
 brew 'git'
