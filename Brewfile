@@ -45,7 +45,6 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 
 cask 'atom'
-cask 'beamer'
 cask 'caffeine'
 cask 'diffmerge'
 cask 'docker-toolbox'
