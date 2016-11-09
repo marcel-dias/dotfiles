@@ -14,6 +14,7 @@ alias gs='git status -sb'
 alias gcb='git-copy-branch-name'
 alias gst='git status'
 alias grh='git reset HEAD'
+alias gfu='git fetch upstream'
 
 gi() {
   curl -s "https://www.gitignore.io/api/$*";
