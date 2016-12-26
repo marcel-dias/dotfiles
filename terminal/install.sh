@@ -1,5 +1,5 @@
 #!/bin/sh
 curl -L \
-  "https://raw.githubusercontent.com/mdo/ocean-terminal/master/terminal-ocean-dark.terminal" \
-  > "/tmp/terminal-ocean-dark.terminal"
-open "/tmp/terminal-ocean-dark.terminal"
+  "https://raw.githubusercontent.com/sindresorhus/terminal-snazzy/master/Snazzy.terminal" \
+  > "/tmp/Snazzy.terminal"
+open "/tmp/Snazzy.terminal"
