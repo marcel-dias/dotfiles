@@ -23,7 +23,7 @@ mvn-color()
                -e "s/Tests run: \([^,]*\), Failures: \([^,]*\), Errors: \([^,]*\), Skipped: \([^,]*\)/${BOLD}${TEXT_GREEN}Tests run: \1${RESET_FORMATTING}, Failures: ${BOLD}${TEXT_RED}\2${RESET_FORMATTING}, Errors: ${BOLD}${TEXT_RED}\3${RESET_FORMATTING}, Skipped: ${BOLD}${TEXT_YELLOW}\4${RESET_FORMATTING}/g"
   MVN_EXIT=${pipestatus[1]}
 
-  message="${PWD##*/}"
+  local message="${PWD##*/}"
   if [ "$MVN_EXIT" = 0 ]; then
     message="$message BUILD SUCCESS!"
   else
