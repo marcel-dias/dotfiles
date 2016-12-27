@@ -15,6 +15,7 @@ alias gcb='git-copy-branch-name'
 alias gst='git status'
 alias grh='git reset HEAD'
 alias gfu='git fetch upstream'
+alias gusub='git submodule update --recursive --remote'
 
 gi() {
   curl -s "https://www.gitignore.io/api/$*";
