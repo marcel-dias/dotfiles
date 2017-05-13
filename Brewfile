@@ -47,7 +47,6 @@ tap 'caskroom/versions'
 
 cask 'atom'
 cask 'caffeine'
-cask 'diffmerge'
 cask 'docker-toolbox'
 cask 'font-hack'
 cask 'franz'
