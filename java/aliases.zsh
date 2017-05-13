@@ -1,13 +1,11 @@
 #!/bin/sh
 
-alias mvnci='mvn clean install -Pformat,production'
+alias mvnci='mvn clean install'
 alias mvnd='mvn deploy'
 alias mvnp='mvn package'
 alias mvnc='mvn clean'
 alias mvncom='mvn compile'
 alias mvnt='mvn test'
-alias mvnformat='mvn validate -Pformat -fcontaazul-config -o'
-alias mvnit='mvn install -B -e -Pproduction,IT -Dit.keepDB -T2C'
 
-alias compile='mvn clean install -DskipTests=true -Pproduction'
+alias compile='mvn clean install -DskipTests=true'
 alias mtree='mvn dependency:tree'
