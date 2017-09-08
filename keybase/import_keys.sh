@@ -15,5 +15,6 @@ gpg --import ~/keybase.secret.key
 
 git config --global user.signingkey $(git config --get user.email)
 git config --global commit.gpgsign true
+git config --global gpg.program $(which gpg)
 
 rm ~/keybase.public.key ~/keybase.secret.key
