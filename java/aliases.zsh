@@ -9,3 +9,4 @@ alias mvnt='mvn test'
 
 alias compile='mvn clean install -DskipTests=true'
 alias mtree='mvn dependency:tree'
+alias mvnd='mvn dependency:resolve'
