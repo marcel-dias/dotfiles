@@ -1,4 +1,5 @@
 caarlos0/jvm
+caarlos0/ports
 djui/alias-tips
 mafredri/zsh-async
 wbinglee/zsh-wakatime
