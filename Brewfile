@@ -1,10 +1,14 @@
 cask_args appdir: '/Applications'
 
+tap 'homebrew/core'
 tap 'homebrew/bundle'
 tap 'homebrew/versions'
+tap 'homebrew/services'
+tap 'getantibody/homebrew-antibody'
 
+brew 'ansible'
+brew 'antibody'
 brew 'diff-so-fancy'
-brew 'docker'
 brew 'ffmpeg'
 brew 'git'
 brew 'glide'
@@ -14,7 +18,9 @@ brew 'gpg-agent'
 brew 'grc'
 brew 'htop-osx'
 brew 'hugo'
-brew 'keybase'
+brew 'jq'
+brew 'mas'
+brew 'maven'
 brew 'node'
 brew 'pinentry-mac'
 brew 'shellcheck'
@@ -36,26 +42,24 @@ brew 'gnutls'
 brew 'gnu-indent'
 brew 'gnu-getopt'
 
-# antibody
-tap 'getantibody/homebrew-antibody'
-brew 'antibody'
-
 # casks
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 
-cask 'atom'
 cask 'caffeine'
-cask 'docker-toolbox'
+cask 'docker'
 cask 'font-hack'
 cask 'franz'
+cask 'google-backup-and-sync'
 cask 'google-chrome'
-cask 'google-drive'
+cask 'intellij-idea'
 cask 'istat-menus'
 cask 'iterm2'
-cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'java'
 cask 'java7'
+cask 'keybase'
+cask 'kitematic'
 cask 'skype'
 cask 'slack'
 cask 'slate'
@@ -64,8 +68,9 @@ cask 'telegram'
 cask 'the-unarchiver'
 cask 'utorrent'
 cask 'viscosity'
+cask 'visual-studio-code'
 cask 'vlc'
-cask 'rescuetime'
+cask 'rescuetime' --force
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask 'betterzipql'
@@ -79,5 +84,14 @@ cask 'quicklook-json'
 cask 'suspicious-package'
 cask 'webpquicklook'
 
-#depends on java
-brew 'maven'
+
+# MacApp Store Apps
+mas '1password', id: 443987910
+mas "Evernote", id: 406056744
+mas "Kindle", id: 405399194
+mas "Memory Clean 2", id: 1114591412
+mas "Pages", id: 409201541
+mas "Spark", id: 1176895641
+mas "TrashMe", id: 443126292
+mas "Trello", id: 1278508951
+mas "Wunderlist", id: 410628904
