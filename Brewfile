@@ -89,7 +89,6 @@ cask 'webpquicklook'
 mas '1password', id: 443987910
 mas "Evernote", id: 406056744
 mas "Kindle", id: 405399194
-mas "Memory Clean 2", id: 1114591412
 mas "Pages", id: 409201541
 mas "Spark", id: 1176895641
 mas "TrashMe", id: 443126292
