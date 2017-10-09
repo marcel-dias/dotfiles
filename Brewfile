@@ -70,7 +70,7 @@ cask 'utorrent'
 cask 'viscosity'
 cask 'visual-studio-code'
 cask 'vlc'
-cask 'rescuetime' --force
+cask 'rescuetime'
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask 'betterzipql'
