@@ -1,7 +1,8 @@
 #!/bin/sh
 
 oplogin() {
-    eval "$(op signin my)"
+    echo "$(op signin my)" > ~/.1passrc
+    source ~/.1passrc
 }
 
 opgetpass() {
