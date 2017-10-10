@@ -47,6 +47,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 
+cask '1password-cli'
 cask 'caffeine'
 cask 'docker'
 cask 'font-hack'
