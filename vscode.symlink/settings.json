@@ -4,7 +4,6 @@
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "files.encoding": "utf8",
     "files.autoSave": "onFocusChange",
-    "terminal.external.osxExec": "iTerm",
     "extension-manager.extensions": [
         "DavidAnson.vscode-markdownlint",
         "PeterJausovec.vscode-docker",
