@@ -12,4 +12,5 @@ if test "$(which code)"; then
     code --install-extension redhat.java
     code --install-extension vscjava.vscode-java-debug
     code --install-extension vscjava.vscode-java-pack
+    code --install-extension WakaTime.vscode-wakatime
 fi
