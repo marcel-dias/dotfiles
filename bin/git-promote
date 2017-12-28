@@ -6,7 +6,7 @@
 # Thanks to ENTP:
 # http://hoth.entp.com/2008/11/10/improving-my-git-workflow
 
-curr_branch=$(git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||')
+curr_branch=$(git rev-parse --abbrev-ref HEAD)
 
 remote_branch=$(git branch -r | grep "origin/${curr_branch}")
 [ -z "${remote_branch}" ] && ( git push origin "${curr_branch}" )
