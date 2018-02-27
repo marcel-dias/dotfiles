@@ -14,4 +14,5 @@ if test "$(which code)"; then
     code --install-extension vscjava.vscode-java-pack
     code --install-extension WakaTime.vscode-wakatime
     code --install-extension jmMeessen.jenkins-declarative-support
+    code --install-extension vscoss.vscode-ansible
 fi
