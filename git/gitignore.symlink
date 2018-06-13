@@ -10,3 +10,6 @@
 deploy.sh
 compile
 .vscode/
+.project
+.settings/
+.classpath
