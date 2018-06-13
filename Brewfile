@@ -86,7 +86,7 @@ cask 'webpquicklook'
 
 
 # MacApp Store Apps
-mas '1password', id: 443987910
+mas '1password', id: 1333542190
 mas "Evernote", id: 406056744
 mas "Kindle", id: 405399194
 mas "Pages", id: 409201541
@@ -94,3 +94,5 @@ mas "Spark", id: 1176895641
 mas "TrashMe", id: 443126292
 mas "Trello", id: 1278508951
 mas "Wunderlist", id: 410628904
+mas "Blogo", id: 902111700
+mas "Memory Clean 2", id: 1114591412
