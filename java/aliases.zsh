@@ -6,7 +6,8 @@ alias mvnp='mvn package'
 alias mvnc='mvn clean'
 alias mvncom='mvn compile'
 alias mvnt='mvn test'
+alias mvnvs='mvn versions:set' #-DnewVersion=
 
-alias compile='mvn clean install -DskipTests=true'
+alias compile='mvn clean package -DskipTests=true'
 alias mtree='mvn dependency:tree'
 alias mvnd='mvn dependency:resolve'
