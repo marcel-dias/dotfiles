@@ -8,6 +8,7 @@ tap 'getantibody/homebrew-antibody'
 
 brew 'ansible'
 brew 'antibody'
+brew 'awscli'
 brew 'diff-so-fancy'
 brew 'ffmpeg'
 brew 'git'
@@ -19,8 +20,11 @@ brew 'grc'
 brew 'htop-osx'
 brew 'hugo'
 brew 'jq'
+brew 'kops'
+brew 'lazygit'
 brew 'mas'
 brew 'maven'
+brew 'mkcert'
 brew 'node'
 brew 'pinentry-mac'
 brew 'shellcheck'
@@ -66,6 +70,7 @@ cask 'slack'
 cask 'spotify'
 cask 'telegram'
 cask 'the-unarchiver'
+cask 'transmission'
 cask 'viscosity'
 cask 'visual-studio-code'
 cask 'vlc'
@@ -83,15 +88,16 @@ cask 'quicklook-json'
 cask 'suspicious-package'
 cask 'webpquicklook'
 
-
 # MacApp Store Apps
-mas '1password', id: 1333542190
-mas "Evernote", id: 406056744
-mas "Kindle", id: 405399194
-mas "Pages", id: 409201541
-mas "Spark", id: 1176895641
-mas "TrashMe", id: 443126292
-mas "Trello", id: 1278508951
-mas "Wunderlist", id: 410628904
-mas "Blogo", id: 902111700
-mas "Memory Clean 2", id: 1114591412
+mas '1password 7', id: 1333542190
+mas 'Blogo', id: 902111700
+mas 'Evernote', id: 406056744
+mas 'Kindle', id: 405399194
+mas 'Magnet', id: 441258766
+mas 'Memory Clean 2', id: 1114591412
+mas 'Pages', id: 409201541
+mas 'Spark', id: 1176895641
+mas 'TrashMe', id: 443126292
+mas 'Trello', id: 1278508951
+mas 'WhatsApp', id: 1147396723
+mas 'Wunderlist', id: 410628904
