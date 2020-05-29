@@ -13,3 +13,5 @@ compile
 .project
 .settings/
 .classpath
+.history/
+.factorypath
