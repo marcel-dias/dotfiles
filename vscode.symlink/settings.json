@@ -3,17 +3,5 @@
     "workbench.colorTheme": "Dracula",
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "files.encoding": "utf8",
-    "files.autoSave": "onFocusChange",
-    "extension-manager.extensions": [
-        "DavidAnson.vscode-markdownlint",
-        "PeterJausovec.vscode-docker",
-        "dracula-theme.theme-dracula",
-        "ms-vscode.azure-account",
-        "redhat.java",
-        "vscjava.vscode-java-debug",
-        "vscjava.vscode-java-pack",
-        "WakaTime.vscode-wakatime",
-        "jmMeessen.jenkins-declarative-support",
-        "vscoss.vscode-ansible"
-    ]
+    "files.autoSave": "onFocusChange"
 }
