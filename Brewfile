@@ -20,7 +20,8 @@ brew 'grc'
 brew 'htop-osx'
 brew 'hugo'
 brew 'jq'
-brew 'kops'
+brew 'kubectx'
+brew 'kubernetes-helm'
 brew 'lazygit'
 brew 'mas'
 brew 'maven'
@@ -52,10 +53,8 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 
 cask '1password-cli'
-cask 'caffeine'
 cask 'docker'
 cask 'font-hack'
-cask 'franz'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'intellij-idea'
@@ -64,7 +63,7 @@ cask 'iterm2'
 cask 'java'
 cask 'java8'
 cask 'keybase'
-cask 'kitematic'
+cask 'oversight'
 cask 'skype'
 cask 'slack'
 cask 'spotify'
@@ -90,7 +89,6 @@ cask 'webpquicklook'
 
 # MacApp Store Apps
 mas '1password 7', id: 1333542190
-mas 'Blogo', id: 902111700
 mas 'Evernote', id: 406056744
 mas 'Kindle', id: 405399194
 mas 'Magnet', id: 441258766
@@ -100,4 +98,4 @@ mas 'Spark', id: 1176895641
 mas 'TrashMe', id: 443126292
 mas 'Trello', id: 1278508951
 mas 'WhatsApp', id: 1147396723
-mas 'Wunderlist', id: 410628904
+mas 'Amphetamine', id: 937984704
