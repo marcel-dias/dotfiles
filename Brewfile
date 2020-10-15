@@ -11,12 +11,15 @@ brew 'antibody'
 brew 'awscli'
 brew 'diff-so-fancy'
 brew 'ffmpeg'
+brew "gettext"
 brew 'git'
 brew 'glide'
 brew 'go'
 brew 'gpg'
 brew 'gpg-agent'
+brew "gradle"
 brew 'grc'
+brew "groovysdk"
 brew 'htop-osx'
 brew 'hugo'
 brew 'jq'
@@ -32,6 +35,7 @@ brew 'shellcheck'
 brew 'terminal-notifier'
 brew 'the_silver_searcher'
 brew 'unrar'
+brew "versent/taps/saml2aws"
 brew 'vim', args: ['--override-system-vi']
 brew 'wget'
 brew 'youtube-dl'
@@ -52,6 +56,8 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 
+cask 'adoptopenjdk/openjdk/adoptopenjdk8'
+cask 'adoptopenjdk/openjdk/adoptopenjdk11'
 cask '1password-cli'
 cask 'docker'
 cask 'font-hack'
@@ -60,10 +66,8 @@ cask 'google-chrome'
 cask 'intellij-idea'
 cask 'istat-menus'
 cask 'iterm2'
-cask 'java'
-cask 'java8'
 cask 'keybase'
-cask 'oversight'
+cask 'lens'
 cask 'skype'
 cask 'slack'
 cask 'spotify'
@@ -88,14 +92,11 @@ cask 'suspicious-package'
 cask 'webpquicklook'
 
 # MacApp Store Apps
-mas '1password 7', id: 1333542190
-mas 'Evernote', id: 406056744
-mas 'Kindle', id: 405399194
-mas 'Magnet', id: 441258766
-mas 'Memory Clean 2', id: 1114591412
-mas 'Pages', id: 409201541
-mas 'Spark', id: 1176895641
-mas 'TrashMe', id: 443126292
-mas 'Trello', id: 1278508951
-mas 'WhatsApp', id: 1147396723
-mas 'Amphetamine', id: 937984704
+mas "1Password 7", id: 1333542190
+mas "Amphetamine", id: 937984704
+mas "Kindle", id: 405399194
+mas "Magnet", id: 441258766
+mas "Spark", id: 1176895641
+mas "TrashMe", id: 443126292
+mas "Trello", id: 1278508951
+mas "WhatsApp", id: 1147396723
