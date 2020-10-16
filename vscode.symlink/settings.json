@@ -3,5 +3,20 @@
     "workbench.colorTheme": "Dracula",
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "files.encoding": "utf8",
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+      },
+      {
+        "name": "JavaSE-11",
+        "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+        "default": true
+      }
+    ],
+    "sonarlint.connectedMode.connections.sonarcloud": [
+      { "organizationKey": "glovo", "token": "dcd623f0e3cb6d39da97950e5cdcd3d82801359f" }
+    ]
 }
