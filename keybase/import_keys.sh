@@ -1,5 +1,7 @@
 #!/bin/sh
 keybase login
+keybase pgp pull $(keybase whoami)
+
 KEYBASE_KEY_ID=$(keybase pgp list | sed -n -e 's/^.*ID:  //p')
 keybase pgp export -q $KEYBASE_KEY_ID -o ~/keybase.public.key
 keybase pgp export -q $KEYBASE_KEY_ID --secret -o ~/keybase.secret.key
@@ -12,6 +14,8 @@ gpg --import ~/keybase.secret.key
 
 # Update the trust level to don't show warning messages
 # gpg --edit-key {username}@keybase.io trust quit
+
+# keybase pgp update
 
 git config --global user.signingkey $(git config --get user.email)
 git config --global commit.gpgsign true
