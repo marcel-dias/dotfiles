@@ -1,4 +1,4 @@
-# Marcel Dias' dotfiles  
+# Marcel Dias' dotfiles
 > My own macOS preferences and configurations for ZSH, Java, Docker, Terminals and others.
 
 ![screenshot][scrn]
@@ -25,7 +25,7 @@ awesome, you might want to [read Caarlos0 post on the subject][post].
 Run this:
 
 ```sh
-bash -c "$(wget -O - https://raw.githubusercontent.com/marceldiass/dotfiles/master/script/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/marcel-dias/dotfiles/master/script/install)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
