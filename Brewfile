@@ -88,6 +88,7 @@ cask "rescuetime"
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
 cask "qlimagesize"
+cask "qlvideo"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
