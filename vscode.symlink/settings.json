@@ -1,6 +1,8 @@
 {
     "extensions.ignoreRecommendations": false,
     "workbench.colorTheme": "Dracula",
+    "workbench.preferredDarkColorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "files.encoding": "utf8",
     "files.autoSave": "onFocusChange",
@@ -17,6 +19,12 @@
       }
     ],
     "sonarlint.connectedMode.connections.sonarcloud": [
-      { "organizationKey": "glovo", "token": "dcd623f0e3cb6d39da97950e5cdcd3d82801359f" }
-    ]
+      { "organizationKey": "glovo", "token": "${SONAR_TOKEN}" }
+    ],
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+  }
 }
