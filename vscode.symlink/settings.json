@@ -26,5 +26,8 @@
       "**/.project": true,
       "**/.settings": true,
       "**/.factorypath": true
-  }
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 0
 }
