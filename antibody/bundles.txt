@@ -2,11 +2,11 @@ caarlos0/jvm
 caarlos0/ports
 djui/alias-tips
 mafredri/zsh-async
+lukechilds/zsh-nvm
 sobolevn/wakatime-zsh-plugin
 superbrothers/zsh-kubectl-prompt
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 
-sindresorhus/pure
 zdharma/fast-syntax-highlighting
 zsh-users/zsh-history-substring-search
