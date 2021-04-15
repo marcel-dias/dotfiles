@@ -20,6 +20,10 @@ done
 # load antibody plugins
 source ~/.antibody_bundles.txt
 
+# load starship
+# eval "$(starship init zsh)"
+source <("/usr/local/bin/starship" init zsh --print-full-init)
+
 # load everything less the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
   source "$file"
