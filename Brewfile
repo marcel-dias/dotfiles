@@ -87,7 +87,7 @@ cask "viscosity"
 cask "visual-studio-code"
 cask "vlc"
 cask "rescuetime"
-cask "zoomus"
+cask "zoom"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
