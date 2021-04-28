@@ -353,6 +353,13 @@ defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 #
+# Gnu GPG signing settigns - Pinentry-mac
+#
+
+# change default behavior to not check saveOnKeyChain
+defaults write org.gpgtools.pinentry-mac UseKeychain -bool NO
+
+#
 # Kill related apps
 #
 set +e
@@ -369,7 +376,9 @@ for app in "Activity Monitor" \
           "Safari" \
           "SystemUIServer" \
           "Terminal" \
-          "Transmission"; do
+          "Transmission" \
+          "pinentry-mac" \
+          "gpg-agent"; do
 	    killall "${app}" &> /dev/null
 done
 set -e
