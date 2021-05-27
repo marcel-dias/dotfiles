@@ -6,5 +6,5 @@ oplogin() {
 }
 
 opgetpass() {
-    op get item "$1" | jq '.details.password' | sed 's/"//g' | sed 's/\r\n//g' | pbcopy
+    op get item "$1" | jq -r '.details.fields[] | select( .designation | contains("password")).value' | tr -d '\n\t' | pbcopy
 }
