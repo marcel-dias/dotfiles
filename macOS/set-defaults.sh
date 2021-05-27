@@ -153,6 +153,7 @@ defaults write com.apple.finder ShowPathbar -bool true
 
 # Finder: allow text selection in the Quick Look window
 defaults write com.apple.finder QLEnableTextSelection -bool true
+xattr -d -r com.apple.quarantine ~/Library/QuickLook/QLColorCode.qlgenerator
 
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
