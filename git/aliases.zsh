@@ -17,7 +17,7 @@ alias grh='git reset HEAD'
 alias gfu='git fetch upstream'
 alias gusub='git submodule update --recursive --remote'
 alias gp='git push'
-alias gpo='git-promote'
+alias gpo='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 
 gi() {
   curl -s "https://www.gitignore.io/api/$*";
