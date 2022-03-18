@@ -61,6 +61,9 @@ disabled = true
 [aws]
 format = 'on [$symbol($profile )(\[$duration\])]($style)'
 
+[docker_context]
+disabled = true
+
 [kubernetes]
 disabled = false
 symbol = "ﴱ "
