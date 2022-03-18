@@ -33,7 +33,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "yaml.customTags": [
     "!encrypted/pkcs1-oaep scalar",
     "!vault scalar"
