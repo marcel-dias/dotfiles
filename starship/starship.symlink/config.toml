@@ -1,2 +1,71 @@
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$directory\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$docker_context\
+$package\
+$container\
+$deno\
+$elixir\
+$golang\
+$helm\
+$java\
+$kotlin\
+$nodejs\
+$pulumi\
+$python\
+$ruby\
+$terraform\
+$vagrant\
+$nix_shell\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$kubernetes\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character
+"""
+
+[directory]
+read_only = " "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[✖](bold red)"
+vicmd_symbol = "[❮](bold green)"
+
 [gcloud]
 disabled = true
+
+[aws]
+format = 'on [$symbol($profile )(\[$duration\])]($style)'
+
+[kubernetes]
+disabled = false
+symbol = "ﴱ "
+#symbol = "☸ "
+format = '[$symbol$context( \($namespace\))]($style)'
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+"gke_.*_(?P<var_cluster>[\\w-]+)" = "gke-$var_cluster"
