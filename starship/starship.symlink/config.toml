@@ -68,7 +68,7 @@ disabled = true
 disabled = false
 symbol = "ﴱ "
 #symbol = "☸ "
-format = '[$symbol$context( \($namespace\))]($style)'
+format = '[$symbol$context( \($namespace\))]($style) '
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
 "gke_.*_(?P<var_cluster>[\\w-]+)" = "gke-$var_cluster"
