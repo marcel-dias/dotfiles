@@ -14,6 +14,8 @@ check_dependencies() {
     if test "$(uname)" = "Darwin"; then
       echo "  Installing Homebrew for you."
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+      echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$(whoami)/.zprofile"
+      eval "$(/opt/homebrew/bin/brew shellenv)"
     else
       echo "  You are not running a macOS"
       exit 1
