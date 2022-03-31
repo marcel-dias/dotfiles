@@ -41,5 +41,7 @@
   "redhat.telemetry.enabled": true,
   "ansible.validate.executablePath": "",
   "go.toolsManagement.autoUpdate": true,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false
 }
