@@ -1,9 +1,10 @@
 # Marcel Dias' dotfiles
+
 > My own macOS preferences and configurations for ZSH, Java, Docker, Terminals and others.
 
 ![screenshot][scrn]
 
-[scrn]: https://raw.githubusercontent.com/marceldiass/dotfiles/master/screenshot.png
+[scrn]: https://raw.githubusercontent.com/marceldiass/dotfiles/main/screenshot.png
 
 ## dotfiles
 
@@ -25,7 +26,7 @@ awesome, you might want to [read Caarlos0 post on the subject][post].
 Run this:
 
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/marcel-dias/dotfiles/master/script/install)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/marcel-dias/dotfiles/main/script/install)"
 ```
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
