@@ -4,7 +4,7 @@
 # Or, in other words, set shit how I like in OS X.
 #
 # The original idea (and a couple settings) were grabbed from:
-#   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+#   https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 # More from:
 #    https://gist.github.com/brandonb927/3195465
 #
@@ -359,6 +359,7 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 # change default behavior to not check saveOnKeyChain
 defaults write org.gpgtools.pinentry-mac UseKeychain -bool NO
+defaults write org.gpgtools.common DisableKeychain -bool yes
 
 #
 # Kill related apps
