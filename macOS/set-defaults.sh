@@ -358,8 +358,9 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 #
 
 # change default behavior to not check saveOnKeyChain
-defaults write org.gpgtools.pinentry-mac UseKeychain -bool NO
-defaults write org.gpgtools.common DisableKeychain -bool yes
+defaults write org.gpgtools.pinentry-mac UseKeychain -bool YES
+defaults write org.gpgtools.common UseKeychain -bool YES
+defaults write org.gpgtools.common DisableKeychain -bool NO
 
 #
 # Kill related apps
