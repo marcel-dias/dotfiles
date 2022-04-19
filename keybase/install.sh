@@ -5,7 +5,7 @@ if [ ! -f ~/.gnupg/gpg.conf ]; then
 fi
 
 # add the use-agent line to ~/.gnupg/gpg.conf
-GPG_USE_AGENT=$(grep -e "#use-agent" ~/.gnupg/gpg.conf)
+GPG_USE_AGENT=$(grep -e "use-agent" ~/.gnupg/gpg.conf)
 if [ "x$GPG_USE_AGENT" != "x" ]; then
   echo "use-agent" >> ~/.gnupg/gpg.conf
 fi
@@ -14,8 +14,8 @@ if [ ! -f ~/.gnupg/gpg-agent.conf ]; then
   touch ~/.gnupg/gpg-agent.conf
 
   {
-    echo "default-cache-ttl 3600"
-    echo "max-cache-ttl 3600"
-    echo "pinentry-program /usr/local/bin/pinentry-mac"
+    echo "default-cache-ttl 0"
+    echo "max-cache-ttl 0"
+    echo "pinentry-program /opt/homebrew/bin/pinentry-touchid"
   } >> ~/.gnupg/gpg-agent.conf
 fi
