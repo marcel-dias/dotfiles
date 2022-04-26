@@ -67,6 +67,7 @@ brew "gnu-getopt"
 
 cask "1password/tap/1password-cli"
 cask "airfoil"
+cask "brave-browser"
 cask "docker"
 cask "font-hack"
 cask "font-hack-nerd-font"
