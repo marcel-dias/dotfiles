@@ -22,3 +22,10 @@ alias gpo='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 gi() {
   curl -s "https://www.gitignore.io/api/$*";
 }
+
+git-lang() {
+  unset LANG
+  git "$@"
+}
+
+alias git='git-lang'
