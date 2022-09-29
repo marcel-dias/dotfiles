@@ -90,7 +90,6 @@ cask "rescuetime"
 cask "slack"
 cask "spotify"
 cask "telegram"
-cask "transmission"
 cask "viscosity"
 cask "visual-studio-code"
 cask "vlc"
@@ -109,7 +108,6 @@ cask "suspicious-package"
 cask "webpquicklook"
 
 # MacApp Store Apps
-mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
 mas "Kindle", id: 405399194
 mas "Magnet", id: 441258766
