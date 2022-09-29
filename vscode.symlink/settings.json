@@ -19,7 +19,9 @@
       }
     ],
     "sonarlint.connectedMode.connections.sonarcloud": [
-      { "organizationKey": "glovo", "token": "${SONAR_TOKEN}" }
+      {
+        "organizationKey": "glovo"
+      }
     ],
     "files.exclude": {
       "**/.classpath": true,
@@ -43,5 +45,11 @@
   "go.toolsManagement.autoUpdate": true,
   "security.workspace.trust.untrustedFiles": "open",
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "xml.server.binary.trustedHashes": [
+    "8080595d4aee6c70818be8c8c8f58db8e2214082492def527ac383970e75da4c"
+  ],
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ]
 }
