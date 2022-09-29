@@ -1,3 +1,4 @@
+ahmetb/kubectx path:completion kind:fpath
 caarlos0/jvm
 caarlos0/ports
 djui/alias-tips
