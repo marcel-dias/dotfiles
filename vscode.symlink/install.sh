@@ -13,7 +13,6 @@ fi
 
 if test "$(which code)"; then
   code --install-extension 1Password.op-vscode
-  code --install-extension cssho.vscode-svgviewer
   code --install-extension DavidAnson.vscode-markdownlint
   code --install-extension dracula-theme.theme-dracula
   code --install-extension eamodio.gitlens
