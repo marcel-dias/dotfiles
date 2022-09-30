@@ -13,6 +13,7 @@ tap "github/gh"
 tap "hashicorp/tap"
 tap "jesseduffield/lazygit"
 tap "jorgelbg/tap"
+tap "marcel-dias/tap"
 
 brew "ansible"
 brew "argocd"
