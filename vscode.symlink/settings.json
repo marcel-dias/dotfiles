@@ -6,21 +6,12 @@
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "files.encoding": "utf8",
     "files.autoSave": "onFocusChange",
-    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home",
     "java.configuration.runtimes": [
       {
-        "name": "JavaSE-1.8",
-        "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
-      },
-      {
         "name": "JavaSE-11",
-        "path": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+        "path": "/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home",
         "default": true
-      }
-    ],
-    "sonarlint.connectedMode.connections.sonarcloud": [
-      {
-        "organizationKey": "glovo"
       }
     ],
     "files.exclude": {
@@ -51,5 +42,10 @@
   ],
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
-  ]
+  ],
+  "git.confirmSync": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "explorer.confirmDragAndDrop": false
 }
