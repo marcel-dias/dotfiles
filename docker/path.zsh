@@ -1,2 +1,3 @@
 #!/bin/sh
-export DOCKER_HOST=unix:///var/run/docker.sock
+
+export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
