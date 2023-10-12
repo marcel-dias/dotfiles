@@ -21,8 +21,7 @@ done
 source ~/.antibody_bundles.txt
 
 # load starship
-# eval "$(starship init zsh)"
-source <(starship init zsh --print-full-init)
+source <(starship init zsh)
 
 # load everything less the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
@@ -53,6 +52,13 @@ unset config_files
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
+if [ ! -f ~/.localrc ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.localrc) ]; then
+  if test "$(which op)"; then
+    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f
+    op inject -f -i ~/localrc.env -o ~/.localrc
+  fi
+fi
+
 [[ -a ~/.localrc ]] && source ~/.localrc
 
 # iterm shell integration
