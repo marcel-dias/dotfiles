@@ -1,3 +1,7 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
 format = """
 $username\
 $hostname\
@@ -66,9 +70,10 @@ disabled = true
 
 [kubernetes]
 disabled = false
-symbol = "ﴱ "
-#symbol = "☸ "
+#symbol = "ﴱ "
+symbol = "☸ "
 format = '[$symbol$context( \($namespace\))]($style) '
+
 [kubernetes.context_aliases]
 "dev.local.cluster.k8s" = "dev"
 "gke_.*_(?P<var_cluster>[\\w-]+)" = "gke-$var_cluster"
