@@ -35,7 +35,7 @@ main() {
     exit 1
   fi
   check_dependencies
-  git clone --recursive https://github.com/marcel-dias/dotfiles ~/.dotfiles
+  git clone --recursive https://github.com/marcel-dias-chegg/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   bash script/bootstrap
   echo "All done! Please, restart your terminal session!"
