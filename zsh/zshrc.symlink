@@ -54,8 +54,8 @@ unset config_files
 # want in your public, versioned repo.
 if [ ! -f ~/.localrc ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.localrc) ]; then
   if test "$(which op)"; then
-    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f
-    op inject -f -i ~/localrc.env -o ~/.localrc
+    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f 1> /dev/null
+    op inject -f -i ~/localrc.env -o ~/.localrc 1> /dev/null
   fi
 fi
 
