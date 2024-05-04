@@ -4,7 +4,7 @@
 [user]
     name = AUTHORNAME
     email = AUTHOREMAIL
-    helper = GIT_CREDENTIAL_HELPER
+    signingkey = SSH_PUB_KEY
 [color]
     diff    = auto
     status  = auto
@@ -50,3 +50,13 @@
     show = diff-so-fancy | less --tabs=4 -RFX
 [pull]
   ff = only
+[commit]
+    gpgsign = true
+[gpg]
+    format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[fetch]
+	timeout = 60
+[init]
+	defaultBranch = main
