@@ -17,11 +17,10 @@ for file in ${(M)config_files:#*/path.zsh}; do
   source "$file"
 done
 
-# load antibody plugins
-source ~/.antibody_bundles.txt
-
 # load starship
-source <(starship init zsh)
+if test "$(which starship)"; then
+  source <(starship init zsh)
+fi
 
 # load everything less the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
@@ -32,6 +31,12 @@ if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
+
+## load zsh plugins installed with homebrew
+zsh_plugins=($(brew --prefix)/share/*/*.zsh)
+for file in ${zsh_plugins}; do
+  source "$file"
+done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
@@ -54,8 +59,8 @@ unset config_files
 # want in your public, versioned repo.
 if [ ! -f ~/.localrc ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.localrc) ]; then
   if test "$(which op)"; then
-    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f
-    op inject -f -i ~/localrc.env -o ~/.localrc
+    op read -o ~/localrc.env op://Busuu/CLI_VARs/notes -f 1> /dev/null
+    op inject -f -i ~/localrc.env -o ~/.localrc 1> /dev/null
   fi
 fi
 

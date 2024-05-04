@@ -38,13 +38,11 @@ if test "$(which code)"; then
   code --install-extension redhat.vscode-xml
   code --install-extension redhat.vscode-yaml
   code --install-extension RescueTime.rescuetime
-  code --install-extension SonarSource.sonarlint-vscode
   code --install-extension vscjava.vscode-java-debug
   code --install-extension vscjava.vscode-java-dependency
   code --install-extension vscjava.vscode-java-pack
   code --install-extension vscjava.vscode-java-test
   code --install-extension vscode-icons-team.vscode-icons
-  code --install-extension WakaTime.vscode-wakatime
   code --install-extension wholroyd.jinja
   code --install-extension xyz.local-history
 fi
