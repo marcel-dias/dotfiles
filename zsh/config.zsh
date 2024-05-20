@@ -65,6 +65,14 @@ fi
 if [[ ! -z "$terminfo[knp]" ]]; then
   bindkey "$terminfo[knp]" down-line-or-history
 fi
+# start typing + [Up-Arrow] - fuzzy find history forward
+if [[ ! -z "$terminfo[kcuu1]" ]]; then
+  bindkey "$terminfo[kcuu1]" history-substring-search-up
+fi
+# start typing + [Down-Arrow] - fuzzy find history backward
+if [[ ! -z "$terminfo[kcud1]" ]]; then
+  bindkey "$terminfo[kcud1]" history-substring-search-down
+fi
 if [[ ! -z "$terminfo[khome]" ]]; then
   # [Home] - Go to beginning of line
   bindkey "$terminfo[khome]" beginning-of-line
