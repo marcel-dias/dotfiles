@@ -8,6 +8,12 @@ export PROJECTS="$HOME/Code"
 # your default editor
 export EDITOR='vim'
 
+## load zsh plugins installed with homebrew
+zsh_plugins=($(brew --prefix)/share/*/*.zsh)
+for file in ${zsh_plugins}; do
+  source "$file"
+done
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/*/*.zsh)
@@ -31,12 +37,6 @@ if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 fi
-
-## load zsh plugins installed with homebrew
-zsh_plugins=($(brew --prefix)/share/*/*.zsh)
-for file in ${zsh_plugins}; do
-  source "$file"
-done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit
