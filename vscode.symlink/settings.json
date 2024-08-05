@@ -1,6 +1,6 @@
 {
     "extensions.ignoreRecommendations": false,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Dracula Theme",
     "workbench.preferredDarkColorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
@@ -47,5 +47,9 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
+  "amazonQ.telemetry": false
 }
