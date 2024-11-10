@@ -51,5 +51,9 @@
   "remote.SSH.remotePlatform": {
     "*.gitpod.io": "linux"
   },
-  "amazonQ.telemetry": false
+  "amazonQ.telemetry": false,
+  "amazonQ.suppressPrompts": {
+    "amazonQSessionConfigurationMessage": true
+  },
+  "amazonQ.workspaceIndex": true
 }
