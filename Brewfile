@@ -1,8 +1,6 @@
 cask_args appdir: "/Applications"
 
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 
 tap "1password/tap"
@@ -128,7 +126,6 @@ cask "zoom"
 
 # https://github.com/sindresorhus/quick-look-plugins
 cask "qlcolorcode"
-cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
