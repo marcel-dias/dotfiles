@@ -1,6 +1,5 @@
 {
     "extensions.ignoreRecommendations": false,
-    "workbench.colorTheme": "Dracula Theme",
     "workbench.preferredDarkColorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
@@ -9,8 +8,8 @@
     "java.home": "/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home",
     "java.configuration.runtimes": [
       {
-        "name": "JavaSE-11",
-        "path": "/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home",
+        "name": "JavaSE-17",
+        "path": "/Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home",
         "default": true
       }
     ],
@@ -24,36 +23,46 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "explorer.confirmDelete": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.md": "default"
   },
   "python.languageServer": "Default",
   "yaml.customTags": [
     "!encrypted/pkcs1-oaep scalar",
     "!vault scalar"
   ],
-  "redhat.telemetry.enabled": true,
   "ansible.validate.executablePath": "",
   "go.toolsManagement.autoUpdate": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
-  "xml.server.binary.trustedHashes": [
-    "8080595d4aee6c70818be8c8c8f58db8e2214082492def527ac383970e75da4c"
-  ],
-  "remote.SSH.defaultExtensions": [
-    "gitpod.gitpod-remote-ssh"
-  ],
   "git.confirmSync": false,
   "[python]": {
     "editor.formatOnType": true
   },
   "explorer.confirmDragAndDrop": false,
-  "remote.SSH.remotePlatform": {
-    "*.gitpod.io": "linux"
+  "workbench.colorTheme": "Dracula Theme",
+  "makefile.configureOnOpen": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "amazonQ.telemetry": false,
-  "amazonQ.suppressPrompts": {
-    "amazonQSessionConfigurationMessage": true
+  "docker.extension.enableComposeLanguageServer": false,
+  "git.openRepositoryInParentFolders": "always",
+  "vs-kubernetes": {
+    "vs-kubernetes.crd-code-completion": "enabled"
   },
-  "amazonQ.workspaceIndex": true
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "claudeCode.preferredLocation": "panel"
 }
