@@ -26,7 +26,7 @@ gi() {
 
 git-lang() {
   unset LANG
-  git "$@"
+  /opt/homebrew/bin/git "$@"
 }
 
 alias git='git-lang'
