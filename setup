@@ -1,0 +1,45 @@
+#!/bin/bash
+set -euo pipefail
+
+info() { echo "  $*"; }
+success() { echo "  OK: $*"; }
+warn() { echo "  SKIP: $*"; }
+
+link() {
+  mkdir -p "$(dirname "$2")"
+  if [ -e "$2" ]; then
+    warn "$2 already exists"
+  else
+    ln -sf "$1" "$2"
+    success "Linked $1 → $2"
+  fi
+}
+
+info "Setting up dotfiles..."
+
+# Shell
+link "$PWD/shell/zshrc" ~/.zshrc
+
+# Git (XDG)
+link "$PWD/git/config" ~/.config/git/config
+link "$PWD/git/ignore" ~/.config/git/ignore
+
+# Terminal & prompt (XDG)
+link "$PWD/ghostty/config" ~/.config/ghostty/config
+link "$PWD/starship/config.toml" ~/.config/starship/config.toml
+
+# VS Code
+link "$PWD/vscode/settings.json" ~/.vscode/settings.json
+
+# Dotfiles that must live in $HOME
+link "$PWD/node/nvmrc" ~/.nvmrc
+link "$PWD/java/java-version" ~/.java-version
+link "$PWD/.editorconfig" ~/.editorconfig
+
+# Homebrew
+if [[ $OSTYPE == 'darwin'* ]]; then
+  info "Running brew bundle..."
+  brew bundle
+fi
+
+success "All done!"
