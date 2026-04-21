@@ -1,0 +1,64 @@
+
+[user]
+	  name = Marcel Dias
+	  email = marcel@pltf.dev
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC2pwno12veVpKCReId/WbnSE8RiBBUxDoVfgXmFz7p7
+[color]
+    diff    = auto
+    status  = auto
+    branch  = auto
+    ui      = true
+[core]
+    editor            = vim
+    compression       = -1
+    autocrlf          = input
+    whitespace        = trailing-space,space-before-tab
+    precomposeunicode = true
+    pager             = diff-so-fancy | less --tabs=4 -RFX
+[apply]
+    whitespace = nowarn
+[help]
+    autocorrect = 1
+[merge]
+    tool = diffmerge
+[mergetool "diffmerge"]
+    cmd           = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+    trustExitCode = true
+    keepBackup    = false
+[diff]
+    tool = diffmerge
+[difftool "diffmerge"]
+    cmd = diffmerge $LOCAL $REMOTE
+[difftool]
+    prompt = false
+[color "diff-highlight"]
+    oldNormal = red
+    oldHighlight = red bold 52
+    newNormal = green
+    newHighlight = blue bold 22
+[grep]
+    extendRegexp = true
+    lineNumber   = true
+[push]
+    default = simple
+[pager]
+    diff = diff-so-fancy | less --tabs=4 -RFX
+    log = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
+[pull]
+    ff = only
+[commit]
+    gpgsign = true
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[fetch]
+	timeout = 60
+[init]
+	defaultBranch = main
+[http]
+	sslVerify = true
+	sslBackend = openssl
+[url "ssh://git@github.com"]
+    insteadOf = https://github.com
