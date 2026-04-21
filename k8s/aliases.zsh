@@ -16,8 +16,19 @@ kroll() {
   k rollout restart -n $ns $(k get deploy -n $ns -o name )
 }
 
+krollall() {
+  for ns in $(kubectl get ns -o jsonpath='{.items[*].metadata.name}'); do
+    kroll "$ns"
+  done
+}
+
 kdrain() {
   nodes="$@"
   echo "nodes==$nodes"
   k drain --delete-emptydir-data --ignore-daemonsets $nodes
+}
+
+knote() {
+  ns="$1"
+  k annotate $(k get es -n $ns -o name ) force-sync=$(date +%s) --overwrite -n $ns
 }
