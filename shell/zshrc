@@ -1,0 +1,42 @@
+#!/bin/zsh
+export ZSH="$HOME/.dotfiles"
+export PROJECTS="$HOME/Code"
+export EDITOR='vim'
+
+# Homebrew ZSH plugins (syntax-highlighting, autosuggestions, history-substring-search)
+for file in $(brew --prefix)/share/*/*.zsh; do
+  source "$file"
+done
+
+# Shell config — explicit sourcing, no auto-discovery
+source "$ZSH/shell/path.zsh"
+source "$ZSH/shell/config.zsh"
+source "$ZSH/shell/aliases.zsh"
+source "$ZSH/shell/functions.zsh"
+
+# Starship prompt
+if command -v starship &>/dev/null; then
+  eval "$(starship init zsh)"
+fi
+
+# Completions
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+autoload -Uz compinit
+if [ ! -f ~/.zcompdump ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit -i
+else
+  compinit -C -i
+fi
+autoload -U colors; colors
+source "$ZSH/shell/completion.zsh"
+
+# Secrets from 1Password
+if [ ! -f ~/.localrc ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.localrc) ]; then
+  if command -v op &>/dev/null; then
+    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f 1>/dev/null
+    op inject -f -i ~/localrc.env -o ~/.localrc 1>/dev/null
+  fi
+fi
+[[ -a ~/.localrc ]] && source ~/.localrc
