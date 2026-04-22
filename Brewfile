@@ -1,8 +1,5 @@
 cask_args appdir: "/Applications"
 
-tap "homebrew/bundle"
-tap "homebrew/services"
-
 tap "1password/tap"
 tap "aws/tap"
 tap "derailed/popeye"
