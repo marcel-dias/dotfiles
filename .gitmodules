@@ -1,0 +1,9 @@
+[submodule "antigen/antigen"]
+	path = antigen/antigen
+	url = https://github.com/zsh-users/antigen.git
+[submodule "build"]
+  path = build
+  url = https://github.com/caarlos0/shell-travis-build.git
+[submodule "vim/vimfiles"]
+  path = vim/vimfiles
+  url = https://github.com/caarlos0/vimfiles.git
