@@ -40,3 +40,4 @@ window-inherit-working-directory=true
 unfocused-split-opacity = 0.75
 split-divider-color = #313244
 unfocused-split-fill = #000000
+desktop-notifications-delay = 30
