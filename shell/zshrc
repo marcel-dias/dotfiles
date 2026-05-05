@@ -32,11 +32,10 @@ fi
 autoload -U colors; colors
 source "$ZSH/shell/completion.zsh"
 
-# Secrets from 1Password
-if [ ! -f ~/.localrc ] || [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.localrc) ]; then
-  if command -v op &>/dev/null; then
-    op read -o ~/localrc.env op://Personal/CLI_VARs/notes -f 1>/dev/null
-    op inject -f -i ~/localrc.env -o ~/.localrc 1>/dev/null
-  fi
+# 1Password shell plugins (gh, openai)
+[[ -f ~/.config/op/plugins.sh ]] && source ~/.config/op/plugins.sh
+
+# Secrets from 1Password — resolved in memory, never written to disk
+if command -v op &>/dev/null; then
+  eval "$(op read op://Personal/CLI_VARs/notes | op inject)" 2>/dev/null
 fi
-[[ -a ~/.localrc ]] && source ~/.localrc
