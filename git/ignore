@@ -16,3 +16,5 @@ compile
 .history/
 .factorypath
 venv/
+
+**/.claude/settings.local.json
