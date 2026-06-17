@@ -36,6 +36,15 @@ link "$PWD/node/nvmrc" ~/.nvmrc
 link "$PWD/java/java-version" ~/.java-version
 link "$PWD/.editorconfig" ~/.editorconfig
 
+# Claude Code hooks (only into Claude config dirs that already exist)
+for claude_dir in ~/.claude ~/.claude-personal; do
+  if [ -d "$claude_dir" ]; then
+    link "$PWD/claude/hooks/gcm-rewrite.sh" "$claude_dir/hooks/gcm-rewrite.sh"
+  else
+    warn "$claude_dir not found — skipping gcm hook"
+  fi
+done
+
 # Homebrew
 if [[ $OSTYPE == 'darwin'* ]]; then
   info "Running brew bundle..."

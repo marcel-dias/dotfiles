@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# gcm — git commit, signed-off (-s) and cryptographically signed (-S).
+#
+# Single source of truth for the "commit" command, used both interactively and
+# by Claude Code (a PreToolUse hook rewrites `git commit` → `gcm`). This was
+# previously a zsh alias (`git commit -s -S -m`); it lives here as a real script
+# on PATH so it resolves in non-interactive shells too. Edit this file to change
+# commit behavior everywhere.
+set -euo pipefail
+
+if [ "$#" -gt 0 ] && [ "${1#-}" = "$1" ]; then
+  # First arg is a bare message, e.g. `gcm "fix: bug"` — preserve alias behavior.
+  exec git commit -s -S -m "$@"
+fi
+
+# Otherwise pass flags straight through, e.g. `gcm -m "..."`, `gcm --amend`.
+exec git commit -s -S "$@"

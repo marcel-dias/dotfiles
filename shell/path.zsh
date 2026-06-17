@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# --- Dotfiles bin ---
+export PATH="$HOME/.dotfiles/bin:$PATH"
+
 # --- System ---
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:/opt/homebrew/bin"
@@ -13,6 +16,7 @@ _nvm_lazy_load() {
   unset -f nvm node npm npx
   [[ -a /opt/homebrew/opt/nvm/nvm.sh ]] && source /opt/homebrew/opt/nvm/nvm.sh
 }
+
 nvm() { _nvm_lazy_load; nvm "$@" }
 node() { _nvm_lazy_load; node "$@" }
 npm() { _nvm_lazy_load; npm "$@" }

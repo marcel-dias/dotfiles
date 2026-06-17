@@ -34,8 +34,3 @@ source "$ZSH/shell/completion.zsh"
 
 # 1Password shell plugins (gh, openai)
 [[ -f ~/.config/op/plugins.sh ]] && source ~/.config/op/plugins.sh
-
-# Secrets from 1Password — resolved in memory, never written to disk
-if command -v op &>/dev/null; then
-  eval "$(op read op://Personal/CLI_VARs/notes | op inject)" 2>/dev/null
-fi

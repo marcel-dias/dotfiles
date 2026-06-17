@@ -11,7 +11,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias ga='git add'
 alias gaa='git add -A'
-alias gcm='git commit -s -S -m'
+# gcm is now a script in ~/.dotfiles/bin/gcm (single source of truth, on PATH)
 alias gs='git status -sb'
 alias gcb='git-copy-branch-name'
 alias gst='git status'
@@ -77,17 +77,6 @@ alias npig='npm install -g'
 alias npit='npm init'
 alias npi='npm install'
 
-# --- Java/Maven ---
-alias mvnci='mvn clean install'
-alias mvnp='mvn package'
-alias mvnc='mvn clean'
-alias mvncom='mvn compile'
-alias mvnt='mvn test'
-alias mvnvs='mvn versions:set'
-alias compile='mvn clean package -DskipTests=true'
-alias mtree='mvn dependency:tree'
-alias mvnd='mvn dependency:resolve'
-
 # --- User ---
 alias src='cd ~/Code'
 alias blog='cd ~/Code/marceldiass.github.io'
@@ -98,3 +87,8 @@ alias pinentry='pinentry-mac'
 
 # --- Shell ---
 alias reload!='source ~/.zshrc'
+
+
+# --- claude ----
+alias claude-personal='CLAUDE_CONFIG_DIR=$HOME/.claude-personal claude'
+
