@@ -90,5 +90,5 @@ alias reload!='source ~/.zshrc'
 
 
 # --- claude ----
-alias claude-personal='CLAUDE_CONFIG_DIR=$HOME/.claude-personal claude'
+# claude-personal is now a script in ~/.dotfiles/bin/claude-personal (on PATH)
 

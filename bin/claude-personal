@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# claude-personal — run Claude Code against the personal config dir.
+#
+# Single source of truth for the "personal Claude" command, on PATH so it
+# resolves in non-interactive shells too. This was previously a zsh alias
+# (`CLAUDE_CONFIG_DIR=$HOME/.claude-personal claude`); it lives here as a real
+# script. Edit this file to change behavior everywhere.
+set -euo pipefail
+
+exec env CLAUDE_CONFIG_DIR="$HOME/.claude-personal" claude "$@"
